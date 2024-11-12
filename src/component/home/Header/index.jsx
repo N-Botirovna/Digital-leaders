@@ -1,9 +1,8 @@
-import { Footer } from '../component/footer/Footer';
-import React from 'react';
-import Navbar from '../component/navbar/Navbar';
-import Container from '../component/ui/Container';
+import Container  from '../../ui/Container'
+import React from 'react'
+import Navbar from '../../navbar'
 
-const Home = () => {
+const Header = () => {
   return (
     <div className=" mx-auto">
       <header
@@ -13,10 +12,10 @@ const Home = () => {
         }}
       >
         <Container>
-          <Navbar />
+        <Navbar/>
           <div className="py-16 text-center md:text-left">
             <h3 className="text-5xl md:text-[100px] leading-124px] font-bold py-4">
-              Empowering Tomorrow’s Leaders Today
+              Empowering Tomorrow&apos;s Leaders Today
             </h3>
             <p className="font-inter text-lg md:text-2xl w-full md:w-2/3 leading-relaxed md:leading-8 text-left mt-4">
               Join a community of changemakers, access exclusive grants, and lead impactful projects to shape a better future.
@@ -28,10 +27,8 @@ const Home = () => {
         </Container>
       </header>
      
-      <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Home;
-
+export default Header

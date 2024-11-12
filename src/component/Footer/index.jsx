@@ -21,7 +21,7 @@ export const Footer = () => {
             </div>
 
             <p className="w-1/2 text-[13px] mt-4">
-              Lorem Ipsum has been the industry's standard dummy text ever since
+              Lorem Ipsum has been the industry&apos;s  standard dummy text ever since
               the 1500s, when an unknown printer took a galley.
             </p>
           </div>
