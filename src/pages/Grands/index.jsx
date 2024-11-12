@@ -1,8 +1,13 @@
+import Navbar from "../../component/navbar"
+import Container from "../../component/ui/Container"
 
 const Grands = () => {
   return (
     <div>
-      Grands
+     <Container>
+      <Navbar/>
+      <h1>grands</h1>
+     </Container>
     </div>
   )
 }
