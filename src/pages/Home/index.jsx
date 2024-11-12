@@ -1,3 +1,4 @@
+import Navbar from "../../component/navbar";
 import Title from "../../component/ui/Title";
 import Container from "../../component/ui/Container";
 import Paragraph from "../../component/ui/Paragraph";
@@ -14,6 +15,7 @@ const Home = () => {
         }}
       >
         <Container>
+        <Navbar/>
           <div className="py-16 text-center md:text-left">
             <h3 className="text-5xl md:text-[100px] leading-124px] font-bold py-4">
               Empowering Tomorrow’s Leaders Today
@@ -24,10 +26,6 @@ const Home = () => {
             <button className="font-inter text-lg font-medium leading-[24.2px] text-white bg-black px-6 py-3 md:py-4 rounded-full mt-10">
               Become a Leader
             </button>
-            <Title text={"text"}/>
-            <Paragraph text={"paragraph"}/>
-            <HighLight text={"highlight"}/>
-            <DirectLink text={"link"}/>
           </div>
         </Container>
       </header>

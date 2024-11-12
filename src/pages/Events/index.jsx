@@ -1,9 +1,12 @@
-import React from 'react'
-
+import Navbar from "../../component/navbar";
+import Container from "../../component/ui/Container";
 const Events = () => {
   return (
     <div>
-      events
+      <Container>
+        <Navbar/>
+        <h1>Events</h1>
+      </Container>
     </div>
   )
 }
