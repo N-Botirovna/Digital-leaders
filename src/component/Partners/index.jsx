@@ -3,7 +3,7 @@ import React from 'react'
 const PartnersPage = () => {
   return (
     <div>
-      partners
+      <h1>partners</h1>
     </div>
   )
 }

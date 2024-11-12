@@ -3,7 +3,9 @@ import React from 'react'
 const EventsPage = () => {
   return (
     <div>
-      events
+     <div className='h-80'>
+<h1>events</h1>
+     </div>
     </div>
   )
 }
