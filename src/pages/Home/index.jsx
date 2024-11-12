@@ -1,3 +1,4 @@
+import Navbar from "../../component/navbar";
 import Container from "../../component/ui/Container";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
         }}
       >
         <Container>
+        <Navbar/>
           <div className="py-16 text-center md:text-left">
             <h3 className="text-5xl md:text-[100px] leading-124px] font-bold py-4">
               Empowering Tomorrow’s Leaders Today
