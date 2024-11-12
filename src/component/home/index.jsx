@@ -1,14 +1,14 @@
-import Header from './Header'
-import React from 'react'
-import PartnerList from './PartnerList'
-
+import Header from "./Header";
+import React from "react";
+import PartnerList from "./PartnerList";
+//
 const HomePages = () => {
   return (
     <>
-    <Header/>
-    <PartnerList/>
+      <Header />
+      <PartnerList />
     </>
-  )
-}
+  );
+};
 
-export default HomePages
+export default HomePages;
