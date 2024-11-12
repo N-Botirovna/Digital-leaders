@@ -1,3 +1,4 @@
+import GrantsPage from "../../component/Grants"
 import Navbar from "../../component/navbar"
 import Container from "../../component/ui/Container"
 
@@ -6,7 +7,7 @@ const Grands = () => {
     <div>
      <Container>
       <Navbar/>
-      <h1>grands</h1>
+      <GrantsPage/>
      </Container>
     </div>
   )

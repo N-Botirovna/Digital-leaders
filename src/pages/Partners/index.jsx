@@ -1,11 +1,12 @@
 import Navbar from "../../component/navbar";
+import PartnersPage from "../../component/Partners";
 import Container from "../../component/ui/Container";
 const Partners = () => {
   return (
     <div>
      <Container>
       <Navbar/>
-      <h1>partners</h1>
+      <PartnersPage/>
      </Container>
     </div>
   )
