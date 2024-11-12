@@ -1,7 +1,4 @@
-import { Footer } from '../component/footer/Footer';
-import React from 'react';
-import Navbar from '../component/navbar/Navbar';
-import Container from '../component/ui/Container';
+import Container from "../../component/ui/Container";
 
 const Home = () => {
   return (
@@ -13,7 +10,6 @@ const Home = () => {
         }}
       >
         <Container>
-          <Navbar />
           <div className="py-16 text-center md:text-left">
             <h3 className="text-5xl md:text-[100px] leading-124px] font-bold py-4">
               Empowering Tomorrow’s Leaders Today
@@ -28,7 +24,6 @@ const Home = () => {
         </Container>
       </header>
      
-      <Footer />
     </div>
   );
 };

@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import i18n from "./i18n";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from "./pages/Home";
-import { Loader } from "./component/loader/Loader";
+import { ROUTES } from "./utils/routes";
+import Layout from "./component/Layout";
+import { Loader } from "./component/loader";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,16 +22,29 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      {loading ? (
-        <Loader size={62} /> // Yuklanayotganda Loaderni ko'rsatish
-      ) : (
+    <Suspense fallback={<Loader/>}>
+
+      <Router>
+
         <Routes>
-          <Route path="/" element={<Home />} />
-          {/* <Route path="blogs" element={<Blogs />} /> */}
+          <Route path="/" element={<Layout />} >
+            {ROUTES.map(({ component: Component, path }, i) => (
+              <Route path={path} element={<Component />} key={i} />
+            ))}
+          </Route>
+          <Route
+            path={'*'}
+            element={
+              <div className="flex w-full h-screen justify-center items-center">
+                <h1>404 Not found 🙁</h1>
+              </div>
+            }
+          />
         </Routes>
-      )}
-    </Router>
+
+      </Router>
+
+    </Suspense>
   );
 }
 
