@@ -1,9 +1,6 @@
 import Navbar from "../../component/navbar";
-import Title from "../../component/ui/Title";
 import Container from "../../component/ui/Container";
-import Paragraph from "../../component/ui/Paragraph";
-import HighLight from "../../component/ui/HighLight";
-import DirectLink from "../../component/ui/DirectLink";
+
 
 const Home = () => {
   return (
