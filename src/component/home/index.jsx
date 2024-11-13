@@ -6,6 +6,9 @@ import InfoCard from "./InfoCard";
 import TopLeaders from "./TopLeaders";
 import LatestGrants from "./LatestGrants";
 import Testimotionals from "./Testimotionals";
+import Events from "./Events";
+import FormModal from "../ui/FormModal";
+import LeaderSingle from "../LeaderSingle";
 //
 const HomePages = () => {
   return (
@@ -16,6 +19,9 @@ const HomePages = () => {
       <TopLeaders/>
       <LatestGrants/>
       <Testimotionals/>
+      <Events/>
+      <FormModal />
+    <LeaderSingle/>
     </>
   );
 };

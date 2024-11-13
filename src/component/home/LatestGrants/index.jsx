@@ -4,6 +4,7 @@ import DirectLink from '../../ui/DirectLink'
 import HighLight from '../../ui/HighLight'
 import Paragraph from '../../ui/Paragraph'
 import SubTitle from '../../ui/subTitle'
+import PostCarousel from '../PostCarousel'
 
 const LatestGrants = () => {
   return (
@@ -13,6 +14,9 @@ const LatestGrants = () => {
         <SubTitle text={"Recent Grant Opportunities"}/>
         <Paragraph style={"w-1/2 py-2"} text={"Explore our latest grants designed to support visionary projects and initiatives that drive change."}/>
         <DirectLink text={"Read More Requirements"}/>
+        <div className="py-6">
+            <PostCarousel/>
+        </div>
       </Container>
     </div>
   )
