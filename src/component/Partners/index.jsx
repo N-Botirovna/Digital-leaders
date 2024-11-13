@@ -11,7 +11,7 @@ const PartnersPage = () => {
     <div>
       <HeaderPartners />
       <HighLight text="Partners" style="mt-32"/>
-      <SubTitle text="We're backed by the best, meet our Partners"/>
+      <SubTitle text="We're backed by the best,meet our Partners"/>
         <Container>
         <div className="grid grid-cols-6 my-22">
         {partners.map((_, index) => (

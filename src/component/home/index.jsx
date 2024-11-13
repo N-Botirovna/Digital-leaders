@@ -2,10 +2,11 @@ import Header from "./Header";
 import React from "react";
 import PartnerList from "./PartnerList";
 import Careers from "./Careers";
-import InfoCard from "./InfoCard";
 import TopLeaders from "./TopLeaders";
 import LatestGrants from "./LatestGrants";
 import Testimotionals from "./Testimotionals";
+import Events from "./Events";
+import FormModal from "../ui/FormModal";
 //
 const HomePages = () => {
   return (
@@ -16,6 +17,8 @@ const HomePages = () => {
       <TopLeaders/>
       <LatestGrants/>
       <Testimotionals/>
+      <Events/>
+      <FormModal />
     </>
   );
 };

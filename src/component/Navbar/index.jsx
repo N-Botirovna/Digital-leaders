@@ -17,7 +17,7 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <nav className="py-4 flex items-center justify-between sticky">
+    <nav className="py-4 flex items-center justify-between sticky font-Inter">
       <div className="logo flex items-center gap-4">
         <img className="w-12 h-12" src={logo} alt="logo" />
         <h3 className="text-[24px] text-2xl font-semibold leading-7 text-left">Digital Leaders</h3>
