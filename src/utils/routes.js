@@ -3,6 +3,7 @@ const Home = lazy(() => import('/src/pages/Home'));
 const Grands = lazy(() => import('/src/pages/Grands'));
 const LeaderBoard = lazy(() => import('/src/pages/LeaderBoard'));
 const Partners = lazy(() => import('/src/pages/Partners'));
+const PartnersDetails = lazy(() => import('/src/pages/Partners/PartnersDetails'));
 const Events=lazy(()=>import('/src/pages/Events'))
 export const Data = [
 	{
@@ -32,8 +33,13 @@ export const ROUTES = [
 		path: '/partners',
 		component: Partners,
 	},
+	{
+		id:5,
+		path:'/partners/:partnerId',
+		component:PartnersDetails,
+	},
     {
-		id: 5,
+		id: 6,
 		path: '/events',
 		component: Events,
 	},

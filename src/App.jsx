@@ -28,9 +28,9 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Layout />} >
-            {ROUTES.map(({ component: Component, path }, i) => (
-              <Route path={path} element={<Component />} key={i} />
-            ))}
+          {ROUTES.map(({ component: Component, path }, i) => (
+  <Route path={path} element={<Component />} key={i} />
+))}
           </Route>
           <Route
             path={'*'}
