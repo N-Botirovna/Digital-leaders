@@ -22,7 +22,7 @@ const Careers = () => {
           />
           <DirectLink text={"Learn More"} />
         </div>
-        <div className="flex py-4 justify-between items-center space-x-3">
+        <div className="flex pt-4 pb-8 justify-between items-center space-x-3">
           <InfoCard
             title={"title"}
             icon={"i"}
