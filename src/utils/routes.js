@@ -1,10 +1,14 @@
 import { lazy } from 'react';
-const Home = lazy(() => import('/src/pages/Home'));
-const Grands = lazy(() => import('/src/pages/Grands'));
-const LeaderBoard = lazy(() => import('/src/pages/LeaderBoard'));
-const Partners = lazy(() => import('/src/pages/Partners'));
-const PartnersDetails = lazy(() => import('/src/pages/Partners/PartnersDetails'));
-const Events=lazy(()=>import('/src/pages/Events'))
+
+const Home = lazy(() => import('../pages/Home'));
+const Grands = lazy(() => import('../pages/Grands'));
+const LeaderBoard = lazy(() => import('../pages/LeaderBoard'));
+const Partners = lazy(() => import('../pages/Partners'));
+const PartnersDetails = lazy(() => import('../pages/Partners/PartnersDetails'));
+const Events = lazy(() => import('../pages/Events'));
+const LeaderDetail = lazy(() => import('../component/LeaderDetail'));
+const EventDetailPage = lazy(() => import('../pages/Events/EventsDetail'));
+
 export const Data = [
 	{
 		id: 1,
@@ -43,5 +47,15 @@ export const ROUTES = [
 		path: '/events',
 		component: Events,
 	},
+	{
+		id:7,
+		path:'/leader/:leadersId',
+		component: LeaderDetail,
+	},
+	{
+		id:8,
+		path:'/event/:eventId',
+		component: EventDetailPage,
+	}
 	
 ];

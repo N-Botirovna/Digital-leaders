@@ -81,7 +81,35 @@ const data = [
     Organization: "IT Investments Center",
     dataJoined: "2 Avg, 04:41 pm",
   },
- 
+  {
+    key:6,
+    id:6,
+    Leader: "Adrian Korsgaard",
+    Organization: "IT Investments Center",
+    dataJoined: "2 Avg, 04:41 pm",
+  },
+  {
+    key:7,
+    id:7,
+    Leader: "Adrian Korsgaard",
+    Organization: "IT Investments Center",
+    dataJoined: "2 Avg, 04:41 pm",
+  },
+  {
+    key:8,
+    id:8,
+    Leader: "Adrian Korsgaard",
+    Organization: "IT Investments Center",
+    dataJoined: "2 Avg, 04:41 pm",
+  },
+  {
+    key:9,
+    id:9,
+    Leader: "Adrian Korsgaard",
+    Organization: "IT Investments Center",
+    dataJoined: "2 Avg, 04:41 pm",
+  },
+  
   
 ];
 const LeaderTable = () => {

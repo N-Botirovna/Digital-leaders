@@ -1,8 +1,18 @@
 import Container  from '../../ui/Container'
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../../navbar'
+import FormModal from '../../ui/FormModal';
 
 const Header = () => {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const handleModalOpen = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalVisible(false);
+  };
   return (
     <div className=" mx-auto">
       <header
@@ -20,9 +30,11 @@ const Header = () => {
             <p className="md:text-2xl font-Inter w-full md:w-2/3 leading-relaxed md:leading-8 text-left mt-4 font-medium  text-[#030712BF]">
               Join a community of changemakers, access exclusive grants, and lead impactful projects to shape a better future.
             </p>
-            <button className="font-Inter text-lg font-medium leading-[24.2px] text-white bg-black px-6 py-3 md:py-4 rounded-full mt-10">
+            <button className="font-Inter text-lg font-medium leading-[24.2px] text-white bg-black px-6 py-3 md:py-4 rounded-full mt-10" onClick={handleModalOpen}>
               Become a Leader
             </button>
+            <FormModal visible={isModalVisible} onClose={handleModalClose} />
+
           </div>
         </Container>
       </header>

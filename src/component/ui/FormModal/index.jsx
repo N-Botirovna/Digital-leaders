@@ -1,61 +1,71 @@
-import React, { useState } from 'react';
-import { Modal, Input, Upload, Button } from 'antd';
-import { UploadOutlined } from '@ant-design/icons';
+import React from "react";
+import { Modal, Input, Upload, Button } from "antd";
+import { UploadOutlined } from "@ant-design/icons";
+import img from "../../../assets/images/leaders/Avatars.png"
 
-const FormModal = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleOpenModal = () => setIsModalOpen(true);
-  const handleCloseModal = () => setIsModalOpen(false);
+const FormModal = ({ visible, onClose }) => {
+  const handleFormSubmit = () => {
+    console.log("Form submitted!");
+    onClose();
+  };
 
   return (
-    <>
-      <Button onClick={handleOpenModal} type="primary">
-        Apply Now
-      </Button>
-      <Modal
-        title=""
-        open={isModalOpen}
-        onCancel={handleCloseModal}
-        footer={null}
-        centered
-        bodyStyle={{ padding: '24px' }}
-        className="rounded-xl"
-      >
-        <div className="text-center">
-          <div className="rounded-full bg-gray-100 w-24 h-24 mx-auto mb-4 flex items-center justify-center">
-            {/* Replace with an avatar image if needed */}
-            <img src="https://via.placeholder.com/64" alt="Avatar" className="rounded-full" />
-          </div>
-          <h2 className="text-xl font-bold">Become a Leader</h2>
-          <p className="text-gray-500 mb-6">
-            Apply now to join our leaders' community and make an impact!
-          </p>
+    <Modal
+      title="Become a Leader"
+      open={visible}
+      onCancel={onClose}
+      footer={null}
+      centered
+      bodyStyle={{ padding: "12px" }}
+      className="rounded-lg h-[90vh]"
+    >
+      <div className="text-center">
+        <div className="h-12 mx-auto mb-2 flex items-center justify-center">
+          <img
+            src={img}
+            alt="Avatar"
+            className="rounded-full"
+          />
         </div>
+        <h2 className="text-xl font-bold">Become a Leader</h2>
+        <p className="text-gray-500 mb-6">
+          Apply now to join our leaders' community and make an impact!
+        </p>
+      </div>
 
-        <form className="space-y-4">
-          <Input placeholder="First name" className="w-full rounded-md" />
-          <Input placeholder="Last name" className="w-full rounded-md" />
-          <Input placeholder="Phone number" className="w-full rounded-md" />
-          <Input.TextArea placeholder="Cover letter" className="w-full rounded-md" rows={4} />
+      <form className="space-y-4">
+        <Input placeholder="First name" className="w-full rounded-lg py-3 bg-[#F3F3F7]" />
+        <Input placeholder="Last name" className="w-full rounded-lg py-3 bg-[#F3F3F7]" />
+        <Input placeholder="Phone number" className="w-full rounded-lg py-3 bg-[#F3F3F7]" />
+        <Input.TextArea
+          placeholder="Cover letter"
+          className="w-full rounded-lg py-3 bg-[#F3F3F7]"
+          rows={4}
+        />
 
-          <Upload
-            accept=".pdf"
-            maxCount={1}
-            beforeUpload={() => false} // Prevent automatic upload
-            className="w-full"
-          >
-            <Button icon={<UploadOutlined />} className="w-full">
+        <Upload
+          accept=".pdf"
+          maxCount={1}
+          beforeUpload={() => false}
+          className="w-full  mx-auto block text-center"
+        >
+          <div className="text-center mx-auto py-3 ">
+            <Button icon={<UploadOutlined />} className="w-full"></Button>
+            <p className="w-2/3 mx-auto">
               CV upload or drag and drop (PDF max. 15 MB)
-            </Button>
-          </Upload>
+            </p>
+          </div>
+        </Upload>
 
-          <Button type="primary" className="w-full mt-4" onClick={handleCloseModal}>
-            Apply Now
-          </Button>
-        </form>
-      </Modal>
-    </>
+        <Button
+          type="primary"
+          className="w-full bg-[#030712] p-6"
+          onClick={handleFormSubmit}
+        >
+          Apply Now
+        </Button>
+      </form>
+    </Modal>
   );
 };
 

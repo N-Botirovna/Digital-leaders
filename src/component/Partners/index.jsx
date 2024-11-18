@@ -1,27 +1,31 @@
-import HeaderPartners from "./HeaderPartners";
-import HighLight from "../ui/HighLight";
-import Container from "../ui/Container";
-import SubTitle from "../ui/subTitle";
-import PartnerCard from "./PartnerCard";
-import logo from "/src/assets/images/logo/Logo.png";
+import Title from '../ui/Title'
+import React from 'react'
+import Navbar from '../navbar'
+import Container from '../ui/Container'
+import Paragraph from '../ui/Paragraph'
+import HighLight from '../ui/HighLight'
+import SubTitle from '../ui/SubTitle'
 
-const partners= Array(12).fill(null);
-const PartnersPage = () => {
+const Partnerspage = () => {
   return (
     <div>
-      <HeaderPartners />
-      <HighLight text="Partners" style="mt-32"/>
-      <SubTitle text="We're backed by the best,meet our Partners"/>
+      <div className="bg-radial-custom text-center py-2">
         <Container>
-        <div className="grid grid-cols-6 my-22">
-        {partners.map((_, index) => (
-              <PartnerCard key={index} logo={logo} partnerId={index}/>
-            ))}
-      </div>
-
+          <Navbar />
+          <div className="py-8">
+            <Title text={`Our valued Partners`}/>
+            <Paragraph text={`We collaborate with leading organizations and innovators who share our vision of empowering leaders and driving impactful change.`} style={`w-1/2`}/>
+          </div>
         </Container>
+      </div>
+      <Container>
+        <HighLight text={'Partners'}/>
+        <SubTitle text={`We’re backed by the best,meet our Partners`} style={`w-1/2`}/>
+      </Container>
     </div>
-  );
-};
+  )
+}
 
-export default PartnersPage;
+export default Partnerspage
+
+

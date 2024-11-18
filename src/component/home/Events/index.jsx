@@ -13,7 +13,7 @@ const Events = () => {
         <HighLight text={"Events"}/>
         <SubTitle text={"Upcoming Projects & Events"}/>
         <Paragraph style={"w-1/2 py-2"} text={"Join us for exciting initiatives and collaborative events that empower leaders to connect and innovate."}/>
-        <DirectLink text={"Read More events"}/>
+        <DirectLink text={"Read More events"} route={'events'}/>
         <div className="py-6">
             <PostCarousel/>
         </div>

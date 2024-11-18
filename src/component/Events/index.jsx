@@ -1,13 +1,59 @@
-import React from 'react'
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import Navbar from "../navbar";
+import Container from "../ui/Container";
+import Paragraph from "../ui/Paragraph";
+import Title from "../ui/Title";
+import EventCard from "./EventCard";
+
+const eventData = Array(12).fill({
+  title: "Setting Up Post Schedules with EventBridge Scheduler & CDK",
+  date: "17 Nov, 2024",
+  time: "3 min read",
+  description:
+    "Discover how AWS EventBridge Scheduler makes it easier to schedule posts and streamline workflows, empowering leaders to be more productive in the modern era.",
+});
 
 const EventsPage = () => {
+  const navigate = useNavigate(); 
+
+  const handleCardClick = (index) => {
+    navigate(`/event/${index}`); 
+  };
   return (
     <div>
-     <div className='h-80'>
-<h1>events</h1>
-     </div>
-    </div>
-  )
-}
+      <div className="bg-radial-custom text-center py-2">
+        <Container>
+          <Navbar />
+          <div className="py-10">
+            <Title text={"Empowering Projects & Events"}/>
+            <Paragraph text={`Explore our latest projects and events designed to bring visionaries
+            together, foster collaborations, and drive impactful change.`} style={`w-1/2`}/>
+          </div>
+        </Container>
+      </div>
 
-export default EventsPage
+      <Container>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-12">
+          {eventData.map((event, index) => (
+            <div
+            key={index}
+            onClick={() => handleCardClick(index)} 
+            className="cursor-pointer"
+          >
+            <EventCard
+              key={index}
+              title={event.title}
+              date={event.date}
+              time={event.time}
+              description={event.description}
+            /> </div>
+          ))}
+        </div>
+      </Container>
+    </div>
+  );
+};
+
+
+export default EventsPage;
