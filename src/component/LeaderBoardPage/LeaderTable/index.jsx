@@ -1,6 +1,7 @@
 import React from "react";
 import { Space, Table, Tag } from "antd";
 import { useNavigate } from "react-router-dom";
+import img from "../../../assets/images/leaders/Profile.png"
 const columns = [
   {
     title: (
@@ -12,8 +13,15 @@ const columns = [
     key: "Leader",
     width: "40%",
     align: "left",
-    render: (text) => (
-      <span className="font-medium text-left text-sm leading-sm">{text}</span>
+    render: (text, record) => (
+      <div className="flex items-center gap-4">
+        <img
+          src={record.img}
+          alt="Profile"
+          className="w-8 h-8 rounded-full object-cover"
+        />
+        <span className="font-medium text-left text-sm leading-sm">{text}</span>
+      </div>
     ),
   },
   {
@@ -52,6 +60,7 @@ const data = [
     Leader: "Adrian Korsgaard",
     Organization: "IT Investments Center",
     dataJoined: "2 Avg, 04:41 pm",
+    img: img
   },
   {
     key:2,
@@ -59,6 +68,7 @@ const data = [
     Leader: "Adrian Korsgaard",
     Organization: "IT Investments Center",
     dataJoined: "2 Avg, 04:41 pm",
+    img: img
   },
   {
     key:3,
@@ -66,6 +76,7 @@ const data = [
     Leader: "Adrian Korsgaard",
     Organization: "IT Investments Center",
     dataJoined: "2 Avg, 04:41 pm",
+    img: img
   },
   {
     key:4,
@@ -73,6 +84,7 @@ const data = [
     Leader: "Adrian Korsgaard",
     Organization: "IT Investments Center",
     dataJoined: "2 Avg, 04:41 pm",
+    img: img
   },
   {
     key:5,
@@ -80,6 +92,7 @@ const data = [
     Leader: "Adrian Korsgaard",
     Organization: "IT Investments Center",
     dataJoined: "2 Avg, 04:41 pm",
+    img: img
   },
   {
     key:6,
@@ -87,6 +100,7 @@ const data = [
     Leader: "Adrian Korsgaard",
     Organization: "IT Investments Center",
     dataJoined: "2 Avg, 04:41 pm",
+    img: img
   },
   {
     key:7,
@@ -94,6 +108,7 @@ const data = [
     Leader: "Adrian Korsgaard",
     Organization: "IT Investments Center",
     dataJoined: "2 Avg, 04:41 pm",
+    img: img
   },
   {
     key:8,
@@ -101,6 +116,7 @@ const data = [
     Leader: "Adrian Korsgaard",
     Organization: "IT Investments Center",
     dataJoined: "2 Avg, 04:41 pm",
+    img: img
   },
   {
     key:9,
@@ -108,8 +124,9 @@ const data = [
     Leader: "Adrian Korsgaard",
     Organization: "IT Investments Center",
     dataJoined: "2 Avg, 04:41 pm",
+    img: img
   },
-  
+
   
 ];
 const LeaderTable = () => {

@@ -8,7 +8,7 @@ import PostCarousel from '../PostCarousel'
 
 const LatestGrants = () => {
   return (
-    <div className='py-6 mt-4'>
+    <div className='py-4'>
       <Container>
         <HighLight text={"Latest Grants"}/>
         <SubTitle text={"Recent Grant Opportunities"}/>

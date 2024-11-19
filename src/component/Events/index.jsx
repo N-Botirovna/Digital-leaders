@@ -6,16 +6,9 @@ import Paragraph from "../ui/Paragraph";
 import Title from "../ui/Title";
 import EventCard from "./EventCard";
 
-const eventData = Array(12).fill({
-  title: "Setting Up Post Schedules with EventBridge Scheduler & CDK",
-  date: "17 Nov, 2024",
-  time: "3 min read",
-  description:
-    "Discover how AWS EventBridge Scheduler makes it easier to schedule posts and streamline workflows, empowering leaders to be more productive in the modern era.",
-});
-
-const EventsPage = () => {
+const EventsPage = ({data}) => {
   const navigate = useNavigate(); 
+  console.log(data);
 
   const handleCardClick = (index) => {
     navigate(`/event/${index}`); 
@@ -35,18 +28,18 @@ const EventsPage = () => {
 
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-12">
-          {eventData.map((event, index) => (
+          {data.map((event, index) => (
             <div
             key={index}
             onClick={() => handleCardClick(index)} 
             className="cursor-pointer"
           >
             <EventCard
-              key={index}
-              title={event.title}
-              date={event.date}
-              time={event.time}
-              description={event.description}
+              e={event.titleEn} 
+              date={new Date(event.createdAt).toLocaleDateString()} 
+              time={new Date(event.createdAt).toLocaleTimeString()}
+              description={event.shortDescriptionEn} 
+              imageUrl={event.photoUrl} 
             /> </div>
           ))}
         </div>
