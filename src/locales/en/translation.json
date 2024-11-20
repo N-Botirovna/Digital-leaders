@@ -1,3 +1,39 @@
+
 {
-    "home":"home"
-}
+    "Home": "Home",
+    "Grants": "Grants",
+    "Leaderboard": "Leaderboard",
+    "Partners": "Partners",
+    "Events": "Events",
+    "BecomeLeader": "Become a Leader",
+    "EmpoweringLeaders": "Empowering Tomorrow’s Leaders Today",
+    "JoinCommunity": "Join a community of changemakers, access exclusive grants, and lead impactful projects to shape a better future",
+    "TrustedTeams": "Trusted by thousands of teams",
+    "Benefits": "Benefits",
+    "WhyJoin": "Why Join Us?",
+    "Opportunities": "Unlock unparalleled opportunities for funding, networking, and personal growth that can elevate your leadership journey.",
+    "TopLeaders": "Top Leaders in Action",
+    "LeadersInspire": "Meet the inspiring individuals who are making waves in their fields and leading transformative projects.",
+    "RecentGrants": "Recent Grant Opportunities",
+    "GrantSupport": "Explore our latest grants designed to support visionary projects and initiatives that drive change.",
+    "Testimonials": "Testimonials from Leaders",
+    "SuccessStories": "Discover how our community of leaders is making an impact, and read their success stories firsthand.",
+    "UpcomingEvents": "Upcoming Projects & Events",
+    "JoinInnovators": "Join us for exciting initiatives and collaborative events that empower leaders to connect and innovate.",
+    "OurPartners": "Our Valued Partners",
+    "PartnerInfo": "We collaborate with leading organizations and innovators who share our vision of empowering leaders and driving impactful change.",
+    "MeetPartners": "We’re backed by the best, meet our Partners",
+    "EventBridge": "Setting Up Post Schedules with EventBridge Scheduler & CDK",
+    "TopAchievers": "Top Achievers",
+    "ImpactLeaders": "Discover the outstanding leaders who are making a significant impact in our community.",
+    "AvailableGrants": "Available Grants",
+    "ApplyNow": "Apply now to join our leaders' community and make an impact!",
+    "BecomeLeaderForm": "Become a Leader",
+    "FirstName": "First name",
+    "LastName": "Last name",
+    "PhoneNumber": "Phone Number",
+    "CoverLetter": "Cover Letter",
+    "events":"Emproving projects & Events",
+    "exploreLatestProjects": "Explore our latest projects and events designed to bring visionaries together, foster collaboration, and drive impactful change."
+  }
+  
