@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face{
+    font-family:"Inter";
+    src:url("./assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf")
+  }
+  body{
+    @apply: font-Inter;
+    scroll-behavior: smooth;
+  }
+
+  .bg-radial-custom {
+    background: radial-gradient(178.87% 39.87% at 50% 100%, #FAF5FF 0%, #FAF5FF 23%, #FFFFFF 89.14%);
+  }
+  .reverse-swiper .swiper-wrapper {
+    flex-direction: column-reverse;
+  }
+  
+

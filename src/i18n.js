@@ -1,31 +1,32 @@
-// i18n.js
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
-// Tarjima fayllarini import qilish
-import translationEn from './locales/en/translation.json';
-import translationUz from './locales/uz/translation.json';
+import en from '../src/locales/en/translation.json';
+import uz from '../src/locales/uz/translation.json';
+import ru from '../src/locales/ru/translation.json';
 
-// Til konfiguratsiyasi
 const resources = {
-  en: {
-    translation: translationEn
-  },
-  uz: {
-    translation: translationUz
-  }
+  en: { translation: en },
+  uz: { translation: uz },
+  ru: { translation: ru },
 };
 
-// i18next sozlamasini o'rnatish
+const selectedLanguage = localStorage.getItem('i18nextLng') || 'uz';
+
 i18n
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'en', // Standart tilni belgilang
-    fallbackLng: 'en',
+    lng: selectedLanguage,
+    fallbackLng: 'uz',
+    supportedLngs: ['en', 'uz', 'ru'],
+    debug: false,
     interpolation: {
-      escapeValue: false
-    }
+      escapeValue: false,
+    },
+    react: { useSuspense: false },
   });
 
 export default i18n;

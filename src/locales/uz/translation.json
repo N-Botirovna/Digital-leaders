@@ -1,3 +1,39 @@
+
 {
-    "home":"Asosiy"
-}
+    "Home": "Asosiy sahifa",
+    "Grants": "Grantlar",
+    "Leaderboard": "Yetakchi ro'yxat",
+    "Partners": "Hamkorlar",
+    "Events": "Tadbirlar",
+    "BecomeLeader": "Yetakchi bo'ling",
+    "EmpoweringLeaders": "Ertangi yetakchilarni kuchaytirish",
+    "JoinCommunity": "O'zgarishlarni amalga oshirish uchun jamiyatga qo'shiling, eksklyuziv grantlar oling va ta'sirli loyihalarni boshqaring",
+    "TrustedTeams": "Minglab jamoalar tomonidan ishonchli",
+    "Benefits": "Foydalar",
+    "WhyJoin": "Nima uchun qo'shilish kerak?",
+    "Opportunities": "Moliya, tarmoq yaratish va shaxsiy o'sish uchun misli ko'rilmagan imkoniyatlar oching, bu sizning yetakchilik sayohatingizni rivojlantiradi.",
+    "TopLeaders": "Yetakchilar harakatda",
+    "LeadersInspire": "Sohalarida inqilob qilish va o'zgarishlar kiritayotgan ilhomlantiruvchi shaxslar bilan tanishing.",
+    "RecentGrants": "Yangi grant imkoniyatlari",
+    "GrantSupport": "Yangi grantlarimizni kashf eting, ular o'zgarishlarni amalga oshiradigan, ilg'or loyihalarni qo'llab-quvvatlashga mo'ljallangan.",
+    "Testimonials": "Yetakchilardan guvohnomalar",
+    "SuccessStories": "Bizning yetakchilarimiz qanday ta'sir ko'rsatayotganini va ularning muvaffaqiyat hikoyalarini o'qing.",
+    "UpcomingEvents": "Kelgusi loyihalar va tadbirlar",
+    "JoinInnovators": "Yetakchilarni ulanish va yangilik kiritish uchun birlashtiradigan tashabbuslar va hamkorlik tadbirlarida bizga qo'shiling.",
+    "OurPartners": "Bizning qadrlangan hamkorlarimiz",
+    "PartnerInfo": "Biz yetakchilarni kuchaytirish va o'zgarishlarni yaratish bo'yicha birgalikda ishlaydigan ilg'or tashkilotlar va innovatorlar bilan hamkorlik qilamiz.",
+    "MeetPartners": "Bizni eng yaxshi qo'llab-quvvatlaydi, hamkorlarimiz bilan tanishing",
+    "EventBridge": "EventBridge Scheduler va CDK yordamida post jadvalini sozlash",
+    "TopAchievers": "Yuqori natijalar ko'rsatganlar",
+    "ImpactLeaders": "Bizning jamiyatimizda sezilarli ta'sir ko'rsatayotgan yetakchilarga oid ma'lumotlar.",
+    "AvailableGrants": "Mavjud grantlar",
+    "ApplyNow": "Yetakchilar jamiyatiga qo'shilib ta'sir ko'rsating!",
+    "BecomeLeaderForm": "Yetakchi bo'ling",
+    "FirstName": "Ism",
+    "LastName": "Familiya",
+    "PhoneNumber": "Telefon raqami",
+    "CoverLetter": "Ariza xati",
+    "events":"Loyihalarni rivojlantirish & tadbirlar",
+    "exploreLatestProjects": "Bizning so'nggi loyihalarimiz va tadbirlarimizni kashf eting, bu erda visionerlarga birlashish, hamkorlikni rivojlantirish va ta'sirli o'zgarishlarni amalga oshirish imkoniyatlari taqdim etiladi."
+  }
+  
