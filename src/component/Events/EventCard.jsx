@@ -1,8 +1,6 @@
 import React from "react";
 import { Card } from "antd";
 const EventCard = ({ title, date, time, description, imageUrl }) => {
-  console.log(imageUrl);
-  console.log(time);
     return (
       <Card hoverable className="transition-shadow duration-300 hover:shadow-lg" 
       bodyStyle={{padding:0}}>
