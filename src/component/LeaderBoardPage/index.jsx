@@ -5,7 +5,7 @@ import Title from "../ui/Title";
 import Paragraph from "../ui/Paragraph";
 import LeaderTable from "./LeaderTable";
 
-const LeaderBoard = () => {
+const LeaderBoardPage = () => {
   return (
     <Container>
       <div className="bg-radial-custom ">
@@ -22,4 +22,4 @@ const LeaderBoard = () => {
   );
 };
 
-export default LeaderBoard;
+export default LeaderBoardPage;
