@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
 import EventsPage from "../../component/Events";
 import request from "../../../src/services/api";
+import { useState, useEffect } from "react";
 
 const Events = () => {
   const [data, setData] = useState([]); 

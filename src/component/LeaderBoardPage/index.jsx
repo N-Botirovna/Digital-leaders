@@ -5,7 +5,7 @@ import Title from "../ui/Title";
 import Paragraph from "../ui/Paragraph";
 import LeaderTable from "./LeaderTable";
 
-const LeaderBoardPage = () => {
+const LeaderBoardPage = (data) => {
   return (
     <Container>
       <div className="bg-radial-custom ">
@@ -16,7 +16,7 @@ const LeaderBoardPage = () => {
         </div>
       </div>
       <div className="py-8">
-      <LeaderTable/>
+      <LeaderTable data={data} />
       </div>
     </Container>
   );
