@@ -8,15 +8,13 @@ import SubTitle from "../ui/SubTitle";
 import PartnerCard from "./PartnerCard";
 import img from "../../assets/images/logo/Logo.png";
 import { useNavigate } from "react-router-dom";
-const images = [
-  img, img, img, img, img, img, img, img, img, img, img, img
-]
 
-const Partnerspage = () => {
+const Partnerspage = ({data}) => {
   const navigate = useNavigate();
   const handleCardClick = (index) => {
     navigate(`/partners/${index}`); 
   };
+  console.log(data.data);
   return (
     <div className="w-full min-h-[100vh]">
       <div className="h-fit bg-radial-custom text-center py-2">
@@ -38,19 +36,22 @@ const Partnerspage = () => {
           style={`w-1/2 mx-auto`}
         />
 
-        <div className="grid grid-cols-6 grid-rows-2 py-14">
-          {images.map((img, index) => (
-            <div
-            key={index}
-            onClick={() => handleCardClick(index)} 
-            className="cursor-pointer"
-          >
-            <PartnerCard
-              key={index}
-              img = {img}
-            /> </div>
-          ))}
-        </div>
+<div className="grid grid-cols-6 grid-rows-2 gap-4">
+  {data?.data && data.data.map((img, index) => (
+    <div
+      key={index}
+      onClick={() => handleCardClick(index)}
+      className="cursor-pointer w-full h-full flex justify-center items-center bg-gray-100 rounded-lg"
+    >
+      <PartnerCard
+        key={img.id}
+        img={img.logoUrl}
+        className="w-full h-full object-contain"
+      />
+    </div>
+  ))}
+</div>
+
       </Container>
     </div>
   );
